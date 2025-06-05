@@ -1,0 +1,33 @@
+name: mar
+channels:
+  - pytorch
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - pytorch-cuda=12.1
+  - pytorch=2.2.2
+  - torchvision=0.17.2
+  - numpy=1.26.4
+  - pip:
+    - opencv-python==4.1.2.30
+    - timm==0.9.12
+    - tensorboard==2.10.0
+    - scipy==1.13.1
+    - gdown==5.2.0
+    - -e git+https://github.com/LTH14/torch-fidelity.git@master#egg=torch-fidelity
+    - einops==0.8.0
+    - ipython
+    - diffusers
+    - omegaconf
+    - lmdb
+    - loguru>=0.7.0
+    - mediapy==1.1.6
+    - einx==0.1.3
+    - huggingface-hub>=0.26.2
+    - ipdb>=0.13.1
+    - peft
+    - ruamel.yaml==0.18.6
+    - ruamel.yaml.clib==0.2.12
+    - torchdiffeq

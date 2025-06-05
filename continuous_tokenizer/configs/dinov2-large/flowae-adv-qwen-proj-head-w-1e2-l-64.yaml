@@ -1,0 +1,60 @@
+results_dir: experiments/tokenizer
+compile: False 
+global_seed: 42
+log_every: 50
+vis_every: 5000
+ckpt_every: 10000
+mixed_precision: bf16
+
+dataset: imagenet
+data_path: ./ImageNet/train
+image_size: 256
+
+vq_model: AE-16
+ema: True 
+codebook_embed_dim: 32
+reconstruction_weight: 1.0
+perceptual_weight: 1.0
+perceptual_warmup: 10000
+disc_weight: 0.2
+use_diff_aug: True 
+disc_cr_loss_weight: 4.0
+disc_start: 20000
+disc_type: dino
+disc_loss: hinge
+gen_loss: hinge
+lecam_loss_weight: 0.001
+
+enc_type: vit
+encoder_model: vit_large_patch14_dinov2.lvd142m
+encoder_pretrained: True
+encoder_patch_size: 16
+encoder_tuning_method: full
+dec_type: vit
+decoder_model: vit_large_patch14_dinov2.lvd142m
+decoder_pretrained: False 
+decoder_patch_size: 16
+decoder_tuning_method: full
+num_latent_tokens: 64
+
+vq_loss: VQFlowLoss
+flow_target_channels: 32
+flow_depth: 6
+flow_width: 1024
+flow_num_sampling_steps: 100
+flow_grad_checkpointing: False
+flow_flow_mul: 4
+flow_loss_weight: 0.01
+flow_loss_trainable: False
+flow_pretrained_path: /path/to/flow_head.pt
+
+epochs: 20
+lr: 1.0e-4
+optim: adamw
+lr_scheduler: cosine
+weight_decay: 0.0001
+beta1: 0.9
+beta2: 0.95
+max_grad_norm: 1.0
+global_batch_size: 256
+
