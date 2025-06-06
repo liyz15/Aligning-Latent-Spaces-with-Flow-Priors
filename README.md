@@ -164,6 +164,19 @@ After modifying the scaling factor, train the MAR model on the cached and normal
 bash mar/scripts/imagenet/flowae_qwen_proj_head_w_1e2.sh
 ```
 
+## Citation
+
+If you find this work helpful, please consider citing:
+
+```
+@misc{li2025aligning,
+  title={Aligning Latent Spaces with Flow Priors},
+  author={Li, Yizhuo and Ge, Yuying and Ge, Yixiao and Shan, Ying and Luo, Ping},
+  year={2025},
+  url={https://arxiv.org/abs/2506.03126}
+}
+```
+
 ## Acknowledgement
 
 
