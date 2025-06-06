@@ -3,7 +3,7 @@
 # Aligning Latent Spaces with Flow Priors
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://liyizhuo.com/align/)
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/1234.56789) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2506.05240-b31b1b.svg)](https://arxiv.org/abs/2506.05240)
 
 </div>
 
