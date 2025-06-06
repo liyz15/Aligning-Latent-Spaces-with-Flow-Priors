@@ -173,7 +173,7 @@ If you find this work helpful, please consider citing:
   title={Aligning Latent Spaces with Flow Priors},
   author={Li, Yizhuo and Ge, Yuying and Ge, Yixiao and Shan, Ying and Luo, Ping},
   year={2025},
-  url={https://arxiv.org/abs/2506.03126}
+  url={https://arxiv.org/abs/2506.05240}
 }
 ```
 
